@@ -1,0 +1,17 @@
+#inputField{
+    -fx-background-color: tomato;
+    -fx-text-fill: aqua;
+}
+
+.send-button{
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-text-fill: aqua;
+    -fx-background-color: tomato;
+    -fx-font-weight: 900;
+}
+.TEXT{
+    -fx-text-fill: tomato;
+    -fx-background-color: aqua;
+    -fx-font-weight: 900;
+}
