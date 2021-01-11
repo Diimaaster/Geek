@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <ListView fx:id="listView" cache="true" cacheHint="QUALITY" prefHeight="200.0" prefWidth="200.0" styleClass="TEXT" stylesheets="@style.css" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <SplitPane dividerPositions="0.6918656056587091" prefHeight="51.0" prefWidth="454.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="inputField" layoutX="71.0" layoutY="45.0" onAction="#addWordToList" prefHeight="113.0" prefWidth="290.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Onyx" size="22.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button contentDisplay="TOP" layoutX="53.0" layoutY="67.0" mnemonicParsing="false" onAction="#addWordToList" styleClass="send-button" stylesheets="@style.css" text="Отправить" textFill="#27e50e" textOverrun="WORD_ELLIPSIS" underline="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </bottom>
+</BorderPane>
